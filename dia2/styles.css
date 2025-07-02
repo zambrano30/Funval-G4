@@ -1,0 +1,29 @@
+h4{
+    color:red;
+    font-size: 20px;
+}
+.parrafo{
+    color:blue;
+    font-size: 20px;
+}
+#comentario{
+    color:purple;
+    font-size: 15px;
+}
+.card{
+    background-color: #033268;
+    color: white;
+}
+#nombre,#apellido{
+    font-size: 25px;
+}
+#edad{
+    font-size: 15px;
+}
+#correo{
+    color: red;
+    font-size: 20px;
+}
+.super-contenedor{
+    background-color: ;
+}
