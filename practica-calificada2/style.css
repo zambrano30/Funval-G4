@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+html,body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    background-color: black;
+    
+}
+h2{
+    color: white;
+    padding:40px;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 40px;
+    margin:4px
+
+}
+.btn{
+    background-color: rgb(68, 68, 216);
+    margin:20px 20px 20px 20px;
+    
+    padding: 7px;
+    border-radius: 10px;
+    
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border:0.5px solid rgb(156, 149, 149);
+    width: 250px;
+    margin-bottom: 15px;
+    height: 400px;
+    width: 300px;
+    
+
+    
+}
+.contenedor2{
+     display: flex;
+    flex-direction: column;
+    padding:20px;
+    border:0.5px solid rgb(156, 149, 149);
+    width: 300px;
+
+
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.facebook{
+    color: blue;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 16px;
+    gap: 8px;
+    border: none;
+    justify-content: center;
+    border:none;
+    cursor:pointer;
+    
+
+
+    
+}
+.password-recover{
+    color:white;
+    text-align: center;
+
+}
+input{
+    background-color: rgb(33, 35, 37);
+    border:0.5 solid white;
+    padding:8px;
+    margin:10px 20px 4px 20px;
+}
+.question{
+    color:white;
+    text-align: center;
+}
+span{
+    color:white;
+    text-align: center;
+    margin: 4px 1px 4px 1px;
+}
+.separador {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      
+    }
+
+.linea {
+      flex: 1;
+      height: 1px;
+      background-color: #555;
+    }
+
+.texto {
+      margin: 0 5px;
+    
+    }
+.facebook svg{
+    width:24px;
+    height:24px;
+}
