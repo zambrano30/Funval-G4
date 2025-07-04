@@ -1,0 +1,145 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+html, body{
+    height:100%;
+    width: 100%;
+
+}
+header{
+    background-color: rgb(58, 55, 58);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    
+
+
+}
+h1{
+    padding: 40px;
+}
+
+nav{
+    background-color: black;
+    padding: 20px 0;
+    margin-top: 32px 0;
+    margin-bottom: 0px;
+    height: 5%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap:5rem;
+    margin: 0;
+    padding: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size:larger;
+
+}
+nav li:hover,nav :active{
+    background-color: rgb(156, 13, 156);
+    color: black;
+    padding: 20px;
+
+}
+nav li{
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+main{
+    height:90%;
+
+}
+.hero{
+    display: flex;
+    text-align: justify;
+    font-size: 25px;
+    color: rgb(7, 7, 100);
+    margin: 25px;
+}
+h2{
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    font-size: 2.5rem;
+    position: static;
+    margin-bottom: 20px
+}
+.historia{
+    max-width: 60%;
+
+}
+.testimonio{
+    max-width: 50%;
+}
+
+img{
+    border-radius: 50%;
+    height: 250px;
+    object-fit: cover;
+    padding: 25px;
+    margin: 25px;
+    margin-left: 50px;
+    
+}
+.otra-section{
+
+    display: flex;
+    text-align: justify;
+    font-size: 25px;
+    color: rgb(7, 7, 100);
+    margin:25px;
+}
+.btn{
+    color: rgb(8, 7, 8);
+    background-color: rgba(241, 148, 8, 0.979);
+    border: none;
+    border-radius: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    line-height: 1.1;
+    
+}
+.btn:hover{
+    background-color: rgb(226, 172, 72);
+    color: white;
+    transform: scale(1.05);
+}
+
+    
+
+footer{
+    background-color: gray;
+    color:back;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-top:32px;
+    font-size: larger;
+}
+

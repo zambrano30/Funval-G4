@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+nav{
+    display:flex;
+    gap:16px;
+}
+header{
+    height: 20%;
+    display: flex;
+    justify-content:space-between;
+    padding-left:20px;
+    padding-right: 20px;
+    align-items: center;
+
+}
+.logo{
+    border-radius: 100%;
+    border: 1px solid;
+}
+ul{
+    display: flex;
+    gap:16px;
+}
+li{
+    list-style: none;
+}
+main{
+    height:90%;
+    display: flex;
+    flex-direction: column;
+}
+.blured-edges{
+    height: 300px;
+    -webkit-mask-image: repeating-radial-gradient(ellipse at center,black 60%,trasparent 100%);
+    mask-image: radial-gradient(ellipse at center, black 60%, trasparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.hero{
+    display: flex;
+    
+}
+.msg{
+    width: 100%;
+    
+}
+footer{
+    height:30px;
+}
