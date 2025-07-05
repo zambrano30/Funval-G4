@@ -1,0 +1,26 @@
+
+.container{
+        border: 1px solid black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 300px;
+
+    }
+.practica0,.practica1,.practica2,.practica3,.practica4{
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+a{
+text-decoration: none;
+}
+

@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+/*.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    background-color: beige;
+    
+    
+
+.caja{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}*/
+
+.caja1{
+    background-color: cadetblue;
+
+
+}
+
+.caja2{
+    background-color: aqua;
+
+
+}
+
+.caja3{
+    background-color: chocolate;
+
+}
+
+.caja4{
+    background-color: darkblue;
+}
+
+.caja5{
+    background-color: rgb(147, 160, 95);
+
+}
+
+.caja6{
+    background-color: rgb(160, 121, 95);
+
+}
+
+.caja7{
+    background-color: rgb(118, 157, 11);
+
+    
+}
+.caja8{
+    background-color: rgb(204, 181, 196);
+
+}
+.caja9{
+    background-color: rgb(179, 29, 176);
+    }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 32px;
+
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 10px;
+
+}
+
+.caja{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+.caja7{
+    width:400px;
+    height: 600px;
+}
+/* Extra small (xs) – menores a 576px */
+@media (max-width: 575.98px) {
+  /* estilos pantallas menores a 576px */
+  .container {
+    flex-direction:column;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .caja {
+    background-color: rgb(221, 115, 136);
+    display: flex;
+    flex-direction:row-reverse;
+  }
+}
+
+/* Small (sm) – 576px o más */
+@media (min-width: 576px) {
+  
+}
+
+/* Medium (md) – 768px o más */
+@media (min-width: 768px) {
+
+}
+
+/* Large (lg) – 992px o más */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large (xl) – 1200px o más */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large (xxl) – 1400px o más */
+@media (min-width: 1400px) {
+}
+
