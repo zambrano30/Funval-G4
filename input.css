@@ -2,4 +2,5 @@
 @theme{
     --breakpoint-chris:100rem;
 }
+@custom-variant dark (&:where(.dark, .dark *));
 
