@@ -12,10 +12,10 @@ console.log("Bienvenido a tu banco favorito: ");
 do {
   opcion = parseInt(
     prompt(`Elige una opción para avanzar (0-3):
-1.Ingresar dinero a su cuenta.
-2.Retirar dinero de su cuenta.
-3.Conocer su saldo.
-0.Salir`)
+1. Ingresar dinero a su cuenta.
+2. Retirar dinero de su cuenta.
+3. Conocer su saldo.
+0. Salir`)
   );
 
   switch (opcion) {
@@ -27,6 +27,7 @@ do {
         break;
       }
       balance = ingreso(balance, cantidad);
+      console.log("Ingreso exitoso.")
       console.log("Su saldo actual es: $" + balance);
       break;
 
@@ -35,13 +36,13 @@ do {
       cantidad = parseFloat(prompt("Cuanto desea retirar de su cuenta: "));
       if (isNaN(cantidad) || cantidad <= 0) {
         console.log("Por favor, ingrese un monto válido y positivo.");
-        break;
       }
       if (cantidad > balance) {
         console.log("Saldo insuficiente");
         break;
       }
       balance = retiro(balance, cantidad);
+      console.log("Retiro exitoso.")
       console.log("Su saldo actual es: $" + balance);
       break;
 
