@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(49, 44, 83);
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    color:white;
+    text-align: center;
+    
+}
+
+#menu{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    list-style: none;
+
+    
+}
