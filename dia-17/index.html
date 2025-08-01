@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 17</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-slate-700 p-8" id="body">
+    <!-- ENCABEZADO Y BOTÓN PARA ABRIR MODAL -->
+    <div class="flex gap-20 p-20 justify-evenly">
+      <h1 class="text-5xl font-bold m-4 text-white">Kevin Rodriguez</h1>
+      <button
+        id="abrirModal"
+        class="text-3xl font-bold m-0 text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
+      >
+        +
+      </button>
+    </div>
+
+    <!-- TABLA DE ESTUDIANTES -->
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-xl font-bold text-white mb-4 text-center">
+        Lista de Estudiantes
+      </h2>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <table class="w-full text-sm text-left text-gray-500">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+            <tr>
+              <th scope="col" class="px-6 py-3 rounded-s-lg">ID</th>
+              <th scope="col" class="px-6 py-3">Nombre</th>
+              <th scope="col" class="px-6 py-3">Edad</th>
+              <th scope="col" class="px-6 py-3">Nacionalidad</th>
+              <th scope="col" class="px-6 py-3 rounded-e-lg">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body">
+            <!-- Los estudiantes se agregarán aquí dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- El Modal -->
+    <div
+      id="modal"
+      class="hidden fixed  inset-0 bg-gray-800 bg-opacity-50 items-center justify-center z-50 size-[100%]"
+    >
+      <div
+        class="modal-content bg-white p-6 rounded-lg shadow-xl max-w-md mx-auto transform scale-90 transition-transform duration-200"
+      >
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold text-gray-800">Agregar Estudiante</h2>
+          <button
+            id="cerrarModal"
+            class="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          >
+            &times;
+          </button>
+        </div>
+
+        <form id="formulario" class="max-w-sm mx-auto w-[500px]">
+          <div class="mb-5">
+            <label
+              for="nombre"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              placeholder="Christopher Zambrano"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="edad"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Edad</label
+            >
+            <input
+              type="number"
+              id="edad"
+              name="edad"
+              class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              placeholder="25"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="nacionalidad"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Nacionalidad</label
+            >
+            <input
+              type="text"
+              id="nacionalidad"
+              name="nacionalidad"
+              class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              placeholder="Ecuatoriano"
+              required
+            />
+          </div>
+
+          <div class="flex gap-3 justify-end">
+            <button
+              type="button"
+              id="cancelar"
+              class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors"
+            >
+              Cancelar
+            </button>
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >
+              Agregar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
